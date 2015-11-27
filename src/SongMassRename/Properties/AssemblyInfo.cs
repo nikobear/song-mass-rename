@@ -1,16 +1,15 @@
 ﻿using System.Reflection;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SongMassRename")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Song Mass Rename")]
+[assembly: AssemblyDescription("Making IDv1 tags for your mp3 files, taking information from the filename")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SongMassRename")]
-[assembly: AssemblyCopyright("Copyright ©  2015")]
+[assembly: AssemblyProduct("Song Mass Rename")]
+[assembly: AssemblyCopyright("Copyright © Nikola Hrusov 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
