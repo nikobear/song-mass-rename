@@ -20,5 +20,6 @@ namespace SongMassRename.Controllers.Interfaces
 		void ChangeSongTitle(string title);
 		
 		void FoundFiles(int count);
+		void Error(string error);
 	}
 }

@@ -1,11 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using SongMassRename.Controllers.Interfaces;
 using SongMassRename.Enums;
 using SongMassRename.Models;
-using TagLib;
-
 using static System.String;
+using File = TagLib.File;
 
 namespace SongMassRename.Controllers
 {
@@ -33,10 +33,18 @@ namespace SongMassRename.Controllers
 
 			var song = LoadSong(file.Filepath);
 
-			ChangeArtist(song, file);
-			ChangeTitle(song, file);
+			try
+			{
 
-			RemoveUnnecessaryInfo(song);
+				ChangeArtist(song, file);
+				ChangeTitle(song, file);
+
+				RemoveUnnecessaryInfo(song);
+			}
+			catch (IOException e)
+			{
+				_logController.Error(e.Message);
+			}
 
 			SaveSong(song, file);
 		}

@@ -129,6 +129,9 @@
   <data name="EndAction" xml:space="preserve">
     <value>Край на {0}</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Грешка: {0}</value>
+  </data>
   <data name="FoundFiles" xml:space="preserve">
     <value>Бяха намерени {0} файла в папката, които отговарят</value>
   </data>

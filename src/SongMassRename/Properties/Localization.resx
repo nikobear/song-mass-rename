@@ -129,6 +129,9 @@
   <data name="EndAction" xml:space="preserve">
     <value>End of {0}</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Error: {0}</value>
+  </data>
   <data name="FoundFiles" xml:space="preserve">
     <value>Found {0} files in the folder, which fit</value>
   </data>

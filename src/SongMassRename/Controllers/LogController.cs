@@ -69,6 +69,11 @@ namespace SongMassRename.Controllers
 			Write(Localization.FoundFiles, count);
 		}
 
+		public void Error(string error)
+		{
+			Write(Localization.Error, error);
+		}
+
 		private static void Write(string text, params object[] parameters)
 		{
 			var timestamp = DateTime.UtcNow.ToString(Settings.Default.TimestampFormat, CultureInfo.InvariantCulture);

@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace SongMassRename.Models
 {
@@ -9,9 +10,9 @@ namespace SongMassRename.Models
 			Filepath = filepath;
 			Filename = Path.GetFileNameWithoutExtension(filepath);
 
-			var split = Filename?.Split('-');
+			var split = Filename?.Split(new [] { " - " }, StringSplitOptions.RemoveEmptyEntries);
 
-			if (split == null)
+			if (split == null || split.Length < 2)
 			{
 				return;
 			}

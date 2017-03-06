@@ -129,6 +129,9 @@
   <data name="EndAction" xml:space="preserve">
     <value>Slut af {0}</value>
   </data>
+  <data name="Error" xml:space="preserve">
+    <value>Fejl: {0}</value>
+  </data>
   <data name="FoundFiles" xml:space="preserve">
     <value>De blev fundet {0} fil i den mappe, der opfylder</value>
   </data>
